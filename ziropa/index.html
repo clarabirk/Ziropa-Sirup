@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content=" initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Ziropa Sirup">
+    <meta name="author" content="Clara Birk">
+    <title>ZIROPA</title>
+    <link rel="stylesheet" href="css/mystyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@1,700&display=swap" rel="stylesheet">
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.css" rel="stylesheet">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.js"></script>
+
+  </head>
+  <body>
+
+    <main id="appRoot">
+      <header class="navbar">
+      <nav class="tabbar">
+
+<!----Logo ---->
+      
+       <a href="#/"><img src="img/logo_sort.png" alt="Logo" width="100" class="logo"></a>
+  
+<!----The mobile menu icon ---->
+        <label for="mobileicon" class="mobileiconlabel">&#9776;</label>
+        <input type="checkbox" id="mobileicon" class="mobileicon">
+        
+<!----Menu items ---->
+        <div class="menuitems__container">
+
+        <a href="#/" class="menuitem">FORSIDE</a>
+       <a href="#/opskrifter" class="menuitem">OPSKRIFTER</a>
+       <a href="#/produkter" class="menuitem">PRODUKTER</a>
+       <a href="#/omos" onclick="myFunction()" class="menuitem">OM OS</a>
+        <a href="#/kontakt" class="menuitem">KONTAKT</a>
+     
+          
+        </div>
+      </nav>
+    </header>
+  
+  
+<!----Forside ---->
+      <section id="home" class="page">
+  
+<!----Slider til forside ---->  
+        <div class="SimpleSlider">
+          <img src="img/drinks.jpg" class="billede2" alt="drinks">
+          <img src="img/sirup.jpg" class="billede2" alt="drinks">
+          <img src="img/stemning.png" class="billede2" alt="drinks">
+          <img src="img/drinks2.jpg" class="billede2" alt="drinks">
+          <img src="img/drinks1.jpg" class="billede2" alt="drinks">
+    
+          </div>
+          
+    <div><h1 class="heading1">ZIROPA SIRUP</h1>
+     <p class="tekst_forside">Meget mere end bare sirup</p></div>
+    
+     
+            <div class="grid-container">
+                <div class="box1"><img src="img/lillabar.png" alt="baer" width="10%"><p class="tekst_grid">Vores sirup er lavet på friske og naturlige råvarer. Ziropa holdet har altid undret sig over hvorfor sirup skulle være tilsat så mange smagsforstærkere, dette har vi lavet om på!</p></div>
+                <div class="vertical"></div>
+                <div class="box2"><img src="img/blabar.png" alt="baer" width="8%"><p class="tekst_grid">Vi elsker at afprøve nye smage og bruge sæsonens råvarer til vores sirup, om sommeren har vi f.eks. hyldeblomstsaft og solbærsaft. Hvor vi om vinteren har karamelsirup og vanijlesirup.</p></div>
+                <div class="vertical1"></div>
+                <div class="box3"><img src="img/rødbar.png" alt="baer" width="8%"><p class="tekst_grid">Vores sirup kan bruges til alt! Kaffe, drinks, milkshakes og meget mere. Vi har også saft og sirup der kan bruges til limonade og hjemmelavet is.</p></div>
+              </div>
+  
+        <div class="billeder_forside">
+        <div class="billede_forside"><img src="img/billede1.png" alt="drinks" class="img1"></div>
+        <div class="billede_forside"><img src="img/billede2.png" alt="drinks" class="img2"></div>
+        <div class="billede_forside"><img src="img/billede3.png" alt="drinks" class="img3"></div>
+        </div>
+
+      <div class="tekst_forside1">
+        <p>Hos Ziropa er vi drevet af en passion for sirup, men helt grundlæggende ligger vores kærlighed inden for de naturlige råvarer.
+            <br>Du får kun det bedste af det bedste serveret hos os. <br>
+            Hvis du er interesseret i at møde os eller smage vores sirup, så kan du finde os på Ingerselv Boulevard's madmarkedet og til dette års Food Festival på Tangkrogen i Aarhus!
+            Du kan også tjekke vores opskrifter ud her!
+        </p>
+        <button onclick="location.href='http://127.0.0.1:5500/#/opskrifter'" class="btn forside">VORES OPSKRIFTER</button>
+
+    </div>
+
+
+<!----Video til forsiden---->
+    <div class="video_section">
+
+        <video id="myVideo" controls>
+            <source src="film/Drinks pakken konceptet 1.2.mp4" type="video/mp4">
+          </video>
+
+        </div>
+            </section>
+  
+
+<!----Opskrifter  ---->
+            <section id="opskrifter" class="page">
+
+                      <div class="container_opskrifter">
+                        <div class="box1">
+                            <div class="card1">
+                                <div><img src="img/opskrift1.png" alt="kort" class="image"></div>
+                                <div class="text">Opskrift på Hindbærbrus:<br>
+
+                                  <br>7 cl Ziropa’s hindbærlikør<br>
+                                  
+                                  <br> 4 cl tranebærsaft<br>
+                                  
+                                  <br> 6 cl Danskvand<br></div>
+                            </div>
+                            <div class="card1">
+                                <div><img src="img/opskrift2.png" alt="kort" class="image"></div>
+                                <div class="text">Opskrift på Mango Tango:<br>
+
+                                  <br> 7 cl Ziropa’s mangolikør<br>
+                                   
+                                  <br> 3 cl limesaft <br>
+                                   
+                                  <br> 6 cl lemon sodavand <br></div>
+                            </div>
+                        </div>
+                        <div class="box1">
+                            <div class="card1">
+                                <div class="image"><img src="img/opskrift3.png" alt="kort"  class="image"></div>
+                                <div class="text">Opskrift på Havtorn Delicious:<br>
+
+                                  <br>7 cl Ziropa’s passionslikør<br>
+                                  
+                                <br>  5 cl havtornsaft <br>
+                                  
+                                <br>  5 cl gingerbeer <br></div>
+                            </div>
+                            <div class="card1">
+                                <div class="image"><img src="img/opskrift4.png" alt="kort"  class="image"></div>
+                                <div class="text">Opskrift på iskaffe:<br>
+
+                                  <br> 2 spsk Ziropa’s vanilje sirup <br>
+                                   
+                                  <br> 2 spsk. instant kaffe<br>
+                                   
+                                   <br>2 spsk koldt vand<br></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+<!----Lykkehjul  ---->
+                    <div class="lykkehjul1">
+                  <p class="tekst_lykkehjul">Hvilken drikkevarer skal du lave næste gang? Drej hjulet!</p>
+                  <div class="sortcirkel" id="element">
+                    <span>Ziropa</span>
+                </div>
+                  <br><br><button onclick class="lykkehjul" type="button" id="knap">DREJ MIG!</button>
+                  <div id="output"></div></div>
+      </section>
+      
+
+<!----Produkter ---->
+
+      <section id="produkter" class="page">
+
+        <div class="card">
+          <img src="img/produkt1.jpg" alt="drinks" style="width:80%">
+          <h1>Hindbær Sirup</h1>
+          <p class="price">120 kr</p>
+          <p class="tekst_produkter">Denne sirup smager himmelsk! Du kan bruge den til hindbærbrus eller som saft der blandes med lidt vand.</p>
+          <p><button>Læs mere</button></p>
+        </div>
+
+        <div class="card">
+          <img src="img/produkt2.jpg" alt="drinks" style="width:80%">
+          <h1>Mango Sirup</h1>
+          <p class="price">120 kr</p>
+          <p class="tekst_produkter">Denne sirup smager vildt lækkert i dine drinks! Den kan bruges til Gin Hass, men også til din næste dessert.</p>
+          <p><button>Læs mere</button></p>
+        </div>
+        
+    </section>
+  
+<!----Om Os ---->
+      <section id="omos" class="page">
+        <div class="omos_div"><h1 class="overskrift_omos">HVEM ER VI?</h1>
+        <img class="billede_ingerslev" src="img/ingerslev.png" alt="drinks">
+        
+        <img class="billede_bolge" src="img/bolge.png" alt="drinks"></div>
+
+        <h3 class="heading_omos">Vi er 3 unge mænd fra Aarhus, der en sommerdag tog os selv i at overveje hvorfor sirup ikke bare var naturligt.
+          Det har vi i sinde at lave om på! Vores sirup er lavet på ren kærlighed med et hint af natur og friske råvarer. 
+          Vi har det skarpeste produkt på markedet!
+        </h3>
+
+        <div class="kort_kryds"><img src="img/kort.png" height="350px" alt="kort"></div>
+
+        <div class="sektion_billede"><img class="billede_kaffe" alt="kaffe" src="img/collage1.png">
+        <h3 class="tekst_omkringvirksomheden">Vi har en baggrund indenfor økonomi, business og virksomhedsstyrelse.
+          Dette har gjort at vi har total styr på Ziropa. Vi ved hvad kunderne gerne vil have! 
+          Vi bidrager hver især med noget forskelligt til virksomheden og vi komplementerer hinanden perfekt.<br>
+          <br>Hvis du vil vide mere om vores produkter, kan du besøge dem her! 
+        </h3></div>
+
+        <button onclick="location.href='http://127.0.0.1:5500/#/produkter'" class="btn omos">VORES PRODUKTER</button>
+        
+      </section>
+  
+  
+<!----Kontakt  ---->
+  
+        <section id="kontakt" class="page">
+
+            <div class="tekst_kontaktside">
+                <h1 class="overskrift_kontakt">Kontakt os endelig hvis du har spørgsmål eller henvendelser!</h1>
+                <p></p>
+            </div>
+
+
+            <form action="https://formsubmit.co/clarabirk@hotmail.dk" method="POST">
+                <div class="row input-container">
+                    <div class="col-xs-12">
+                      <div class="styled-input wide">
+                        <input type="text" name="name" required />
+                        <label>Navn</label> 
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                      <div class="styled-input">
+                        <input type="email" name="email" required />
+                        <label>Email</label> 
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                      <div class="styled-input" style="float:right;">
+                        <input type="text" name="tlf" required />
+                        <label>Tlf. Nr</label> 
+                      </div>
+                    </div>
+                    <div class="col-xs-12">
+                      <div class="styled-input wide">
+                        <textarea name="besked" required></textarea>
+                        <label>Besked</label>
+                      </div>
+                    </div>
+                    <div class="col-xs-12">
+                      <button type="submit" class="knap">Send besked</button>
+                    </div>
+                </div>
+            </form>
+   
+              <!--Mapbox til deres kontor --> 
+      <div class="main_map">
+  
+        <div id='map'></div>
+      </div>
+  
+      </section>
+  
+    
+    </main>
+  <footer class="page_footer" >
+    <div class="footer_card">
+      <h4 class="footer_card_heading">SOCIALE MEDIER</h4>
+      <a href="https://www.facebook.com/ziropasirup" target="_blank"><img src="img/some/facebook.png" alt="facebook logo til sociale medier" class="some_image"></a>
+      
+      <a href="https://www.linkedin.com/company/ziropa-sirup/about/" target="_blank"><img src="img/some/linkedin.png" alt=" logo til sociale medier" class="some_image"></a>
+                  
+      <a href="https://www.instagram.com/ziropa_sirup/" target="_blank"><img src="img/some/instagram.png" alt="instagram logo til sociale medier" class="some_image"></a>
+      
+      </div>
+
+      
+      <div class="footer_card">
+      <h4 class="footer_card_heading1">KONTAKT</h4>
+      <address class="address">
+          ZIROPA SIRUP <br>
+          Universitetsbyen 14, 8000 Aarhus C <br>
+          info@ziropasirup.dk <br>
+          +45 29 13 02 23 <br>
+                      <br>
+      
+      </address>
+       </div>
+
+
+
+  </footer>
+
+  <script src="./js/app.js" type="module"></script>
+  <script src="./js/main.js"></script> 
+    
+
+
+</body>
+
+</html>
